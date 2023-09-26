@@ -1,0 +1,27 @@
+#register {
+  margin-left: 19cm;
+  margin-top: 6cm;
+  width: 12cm;
+}
+#username {
+  margin-bottom: 20px;
+}
+#submit {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#address {
+  margin-top: 20px;
+  margin-left: 12px;
+}
+#first {
+  background-color: grey;
+}
+#second {
+  background-color: grey;
+  display: none;
+  height: 6cm;
+}
+.blue {
+  color: blue;
+}

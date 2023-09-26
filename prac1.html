@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="prac1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form id="register">
+        <h1 id="head">this is registration form</h1>
+        <lable for="username">Username</lable>
+        <input type="text" id="username" /></br>
+        <lable for="password">Password</lable>
+        <input type="text" id="password" /></br>
+        <label for="address">Address</label>
+        <input type="textarea" id="address"></br>
+        <button type="submit" id="submit" value="submit">Submit</button>
+        <input type="button" id="clear" value="click me!">
+        <input type="button" id="itsclear" value="click me!">
+        <input type="button" id="classadd" value="class!">
+
+        <div id="one" style="height:60px;width:40px;background-color:brown;display: none;"></div>
+        <div id="two" style="height:60px;width:40px;background-color:chocolate;display: none;"></div>
+        <div id="three" style="height:60px;width:40px;background-color:violet;display: none;"></div>
+    </form>
+    <div id="first">
+        <h1>click hear to view more</h1>
+    </div>
+    <div id="second">
+        <h1>have a nice to all</h1>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#username').focus(function () {
+                $(this).css('background-color', 'pink');
+            });
+            $('#username').blur(function () {
+                $(this).css('background-color', '');
+            });
+            //$('#register').click(function () {
+            //  $('#register').css('background-color', 'grey');
+            //});
+            $('#register').mouseenter(function () {
+                $(this).css('background', 'grey');
+            });
+            $('#register').mouseleave(function () {
+                $(this).css('background', '');
+            });
+            $('#clear').click(function () {
+                $('#username').hide();
+            });
+            $('#itsclear').click(function () {
+                $('#one').fadeIn();
+                $('#two').fadeIn("slow");
+                $('#three').fadeIn("3000");
+            });
+            $('#first').click(function () {
+                $("#second").slideDown("4000").slideUp('4000');
+            });
+            $('#first').dblclick(function () {
+                $("#second").slideUp("slow");
+            });
+            //     $('#register').submit(function () {
+            //       alert("this is:" + $('#head').text());
+            // });
+            $('#register').submit(function () {
+                $('#username').val('prakash');
+            });
+            $('#classadd').click(function () {
+                $("h1").addClass("blue");
+            });
+        });
+        var c = [1, 2, 3, 45, 4];
+        $.each(c, function (index, val) {
+            console.log(index, val);
+        });
+
+        var d = new Array("prakash", "jd", "dilip", "uttam");
+        $.each(d, function (index, val) {
+            console.log(val);
+        });
+    </script>
+</body>
+
+</html>
