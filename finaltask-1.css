@@ -1,0 +1,106 @@
+#register {
+  background-image: url("reg.jpg");
+  margin-top: 100px;
+  width: 13cm;
+  margin-left: 10px;
+}
+*.form-field {
+  border-radius: 22 px;
+  width: 10cm;
+  margin-left: 1cm;
+  padding-top: 20px;
+}
+#submitbtn {
+  margin-left: 2.6cm;
+  border-radius: 22px;
+  width: 100px;
+  height: 40px;
+  border-color: rgb(100, 24, 24);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(121, 26, 26);
+}
+#resetbtn {
+  margin-left: 60px;
+  border-color: rgb(100, 24, 24);
+  background-color: rgb(121, 26, 26);
+  border-radius: 22px;
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#male,
+#female,
+#trans {
+  margin-left: 10px;
+}
+#lmale,
+#lfemale,
+#ltrans {
+  margin-left: 30px;
+}
+#X,
+#XII,
+#UG,
+#PG {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#lx,
+#lxii,
+#lug,
+#lpg {
+  margin-left: 30px;
+}
+#register {
+  color: solid 2px black;
+  border-radius: 13px;
+  background-image: url("wood3.jpg");
+}
+*.form-field:hover {
+  color: rgb(110, 21, 21);
+  font-size: 17px;
+}
+
+#uname,
+#pwd,
+#cpwd,
+#emails,
+#educ,
+#uimage,
+#date,
+#uaddress,
+#year,
+#genders,
+#uid {
+  color: rgb(255, 16, 16);
+}
+body {
+  background-image: url("green.jpg");
+  background-attachment: fixed;
+}
+#first {
+  margin-left: 10cm;
+  color: wheat;
+}
+#h1 {
+  margin-left: 100px;
+  color: rgb(90, 11, 11);
+}
+#username,
+#cpassword,
+#password,
+#email,
+#gender,
+#education,
+#uploadimage,
+#uploadpdf,
+#dob,
+#add,
+#dayadd,
+#monthadd,
+#yearadd {
+  border-radius: 20px;
+  border-color: rgb(96, 148, 96);
+}
