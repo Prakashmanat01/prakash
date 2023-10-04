@@ -1,0 +1,16 @@
+#uinput {
+  width: 10cm;
+  margin-bottom: 30px;
+}
+#guess {
+  margin-top: 100px;
+  margin-left: 17cm;
+}
+#head {
+  font-size: 30px;
+  color: rgb(121, 60, 80);
+}
+#hint {
+  font-size: 16px;
+  width: 11cm;
+}
