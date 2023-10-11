@@ -1,0 +1,13 @@
+#login {
+  margin-top: 4cm;
+  margin-left: 15cm;
+}
+*.form-field {
+  width: 15cm;
+}
+.error {
+  color: red;
+}
+*.form-control {
+  border-radius: 20px;
+}
