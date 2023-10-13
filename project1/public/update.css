@@ -1,0 +1,9 @@
+.error {
+  color: red;
+}
+*.form-field {
+  margin-left: 50px;
+}
+*.form-control {
+  width: 20cm;
+}

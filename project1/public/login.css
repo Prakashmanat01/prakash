@@ -1,0 +1,20 @@
+#login {
+  margin-top: 4cm;
+  margin-left: 2cm;
+}
+*.form-control {
+  width: 15cm;
+}
+*.form-field {
+  margin-left: 12cm;
+}
+#submit {
+  margin-left: 12cm;
+  margin-top: 20px;
+}
+#link {
+  margin-left: 9.6cm;
+}
+#submit:hover {
+  background-color: #90646d;
+}
