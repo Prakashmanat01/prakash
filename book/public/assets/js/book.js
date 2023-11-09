@@ -7,11 +7,35 @@ $(document).ready(function () {
     $('input[type="date"]').attr('max', fiveday);
 
 
+    $(".movie").change(function () {
+        var movie_id = $(this).val();
+        var date = $('.date').val();
+        var time = $("input[type='radio'][name='time']:checked").val();
+
+        if (movie_id != '' && date != '' && time != '') {
+            getTicket(movie_id, date, time);
+        }
+    });
+
+
+
+    $(".date").change(function () {
+        var date = $(this).val();
+        var movie_id = $('.movie').val();
+
+
+        var time = $("input[type='radio'][name='time']:checked").val();
+        if (movie_id != '' && date != '' && time != '') {
+            getTicket(movie_id, date, time);
+        }
+    });
+
+
     //ajax calll
     $(".time").change(function () {
         var movie_id = $('.movie').val();
         var date = $('.date').val();
-        var time = $(this).val();
+        var time = $("input[type='radio'][name='time']:checked").val();
 
 
         if (movie_id != '' && date != '' && time != '') {
